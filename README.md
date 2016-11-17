@@ -1,7 +1,8 @@
 # bitcurator-distro-tools
+
 Disk image analysis tools developed for the BitCurator environment
 
-# Installing
+## Installing
 
 The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. See https://github.com/bitcurator/bitcurator-distro-boostrap for the full dependency stack.
 
@@ -12,7 +13,7 @@ To install:
 
 This will install the BitCurator Disk Image Access, BitCurator Mounter, and BitCurator Reporting tools.
 
-# Running the reporting tool (generate_report.py) on the command line:
+## Running the reporting tool (generate_report.py) on the command line:
 
 **generate_report.py**
 A module for working with bulk_extractor
