@@ -949,6 +949,12 @@ class volumeobject_sax(saxobject):
         except KeyError:
             return self.tag('Partition_Offset')
 
+    def sector_size(self):
+        try:
+            return self.tag('sector_size')
+        except KeyError:
+            return self.tag('sector_size')
+
 register_sax_tag(volumeobject_sax,'ftype')
 register_sax_tag(volumeobject_sax,'ftype_str')
 register_sax_tag(volumeobject_sax,'block_count')
