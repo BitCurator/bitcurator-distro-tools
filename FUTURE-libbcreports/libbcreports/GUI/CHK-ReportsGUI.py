@@ -11,7 +11,7 @@
 import os
 import sys
 import logging
-from libbcreports import bc_reports, bc_config
+#from libbcreports import bc_reports, bc_config
 
 from PyQt5 import QtCore, QtWidgets
 from ReportsWindow import Ui_MainWindow
