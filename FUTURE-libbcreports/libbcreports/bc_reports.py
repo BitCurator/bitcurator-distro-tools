@@ -12,18 +12,22 @@ from __future__ import with_statement
 __version__ = "0.9.4"
 
 b'This module needs Python 2.7 or later.'
+
 import re, os, sys, zipfile, glob, codecs
 import fnmatch, string, datetime
 import bc_utils, bc_config, bc_pdf, bc_graph, bc_regress
+
 from fpdf import *
 from collections import namedtuple
+
 from bc_utils import filename_from_path
 from bc_genrep_dfxml import bc_process_xmlfile_using_sax
 from bc_genrep_dfxml import bc_get_volume_info_from_sax
 from bc_genrep_text import bc_process_textfile
 from bc_genrep_xls import bc_generate_xlsx
 from bc_genrep_feature_xls import bc_generate_feature_xlsx
-from PyQt4 import QtCore, QtGui
+
+from PyQt5 import QtCore, QtGui
 from lxml import etree
 from xml.etree import ElementTree as ET
 
