@@ -1,5 +1,8 @@
 # bitcurator-distro-tools
 
+[![GitHub issues](https://img.shields.io/github/issues/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/issues)
+[![GitHub forks](https://img.shields.io/github/forks/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/network)
+
 Disk image analysis tools developed for the BitCurator environment
 
 ## Installing
