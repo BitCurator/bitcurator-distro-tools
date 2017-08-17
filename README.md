@@ -7,7 +7,7 @@ Disk image analysis tools developed for the BitCurator environment
 
 ## Installing
 
-The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. See https://github.com/bitcurator/bitcurator-distro-boostrap for the full dependency stack.
+The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. See https://github.com/bitcurator/bitcurator-distro-bootstrap for the full dependency stack.
 
 To install:
 
