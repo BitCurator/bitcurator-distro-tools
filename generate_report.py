@@ -76,7 +76,7 @@ class PDF_BE(FPDF):
     def bc_extract_info_from_bexml(self, be_reports_file):
         ver = tb = es = mds = None
 
-        with open (be_reports_file, "r") as myfile:
+        with open (be_reports_file, "r", error='replace') as myfile:
             xml=myfile.read()
 
         be_version = ET.fromstring(xml).find('creator/version')
@@ -903,7 +903,7 @@ class PdfReport:
 
             # Extract the last 1K characters block which includes the last
             # seven lines.
-            with open(input_file, "r") as f:
+            with open(input_file, "r", errors='replace') as f:
                 f.seek(0,2)          # Seek @ EOF
                 fsize = f.tell()     # Get size
                 f.seek(max(fsize-1024, 0), 0)   # Set pos at last 1024 chars
