@@ -76,7 +76,7 @@ class PDF_BE(FPDF):
     def bc_extract_info_from_bexml(self, be_reports_file):
         ver = tb = es = mds = None
 
-        with open (be_reports_file, "r", error='replace') as myfile:
+        with open (be_reports_file, "r", errors='replace') as myfile:
             xml=myfile.read()
 
         be_version = ET.fromstring(xml).find('creator/version')
