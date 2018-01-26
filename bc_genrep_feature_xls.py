@@ -29,9 +29,12 @@ def bc_generate_feature_xlsx(PdfReport, data, feature_file):
     ws = wb.worksheets[0]
     ws.title = "File Feature Information"
 
-    ws.cell('%s%s'%('A', '1')).value = '%s' % "Filename"
-    ws.cell('%s%s'%('B', '1')).value = '%s' % "Feature"
-    ws.cell('%s%s'%('C', '1')).value = '%s' % "Position"
+    ws['A1'] = 'Filename'
+    ws['B1'] = 'Feature'
+    ws['C1'] = 'Position'
+    #ws.cell('%s%s'%('A', '1')).value = '%s' % "Filename"
+    #ws.cell('%s%s'%('B', '1')).value = '%s' % "Feature"
+    #ws.cell('%s%s'%('C', '1')).value = '%s' % "Position"
 
     linenum=0
     for row in data:
@@ -62,9 +65,12 @@ def bc_generate_feature_xlsx(PdfReport, data, feature_file):
                             (is_special_file(filename)):
                 ## print("D: File %s is special. So skipping" %(filename))
                 continue
-        ws.cell('%s%s'%('A', row_idx[0])).value = '%s' % filename
-        ws.cell('%s%s'%('B', row_idx[0])).value = '%s' % feature
-        ws.cell('%s%s'%('C', row_idx[0])).value = '%s' % position
+        ws.cell(row=row_idx[0], column=1, value=filename)
+        ws.cell(row=row_idx[0], column=2, value=feature)
+        ws.cell(row=row_idx[0], column=3, value=position)
+        #ws.cell('%s%s'%('A', row_idx[0])).value = '%s' % filename
+        #ws.cell('%s%s'%('B', row_idx[0])).value = '%s' % feature
+        #ws.cell('%s%s'%('C', row_idx[0])).value = '%s' % position
 
         row_idx[0] += 1
 
