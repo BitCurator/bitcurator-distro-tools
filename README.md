@@ -1,13 +1,17 @@
+[![Logo](https://wiki.bitcurator.net/downloads/BitCurator-400px.png)
+
 # bitcurator-distro-tools
 
 [![GitHub issues](https://img.shields.io/github/issues/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/issues)
 [![GitHub forks](https://img.shields.io/github/forks/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/network)
 
-Disk image analysis tools developed for the BitCurator environment
+Disk image analysis tools developed for the BitCurator environment.
 
 ## Installing
 
-The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. See https://github.com/bitcurator/bitcurator-distro-bootstrap for the full dependency stack.
+The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. 
+
+The full dependency stack can currently be built automatically in Ubuntu 18.04LTS using the SaltStack build repo at https://github.com/bitcurator/bitcurator-distro-salt. Past release (no longer actively maintained) used the now-deprecated https://github.com/bitcurator/bitcurator-distro-bootstrap.
 
 To install:
 
