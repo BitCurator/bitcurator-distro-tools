@@ -15,8 +15,10 @@ The full dependency stack can currently be built automatically in Ubuntu 18.04LT
 
 To install:
 
+```shell
   python3 setup.py build
   sudo python3 setup.py install
+```
 
 This will install the BitCurator Disk Image Access, BitCurator Mounter, and BitCurator Reporting tools.
 
