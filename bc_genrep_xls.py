@@ -16,7 +16,6 @@ from bc_utils import filename_from_path
 from openpyxl.workbook import Workbook
 from openpyxl.writer.excel import ExcelWriter
 
-#from openpyxl.cell import get_column_letter
 from openpyxl.utils import get_column_letter
 
 def build_local_wb(ws, fi, row_idx):
@@ -38,8 +37,8 @@ def process_files(fn, ws):
 
     # Callback function to process the SAX stream
     def cb(fi):
-        # add the md5 to the set
-        if fi.is_file() and fi.filesize():
+        # Build a row for all regular files
+        if fi.is_file():
             build_local_wb(ws, fi, row_idx[0])
             row_idx[0] += 1
         # Certain HFS volumes may have a "-" name_type. Check and continue:
