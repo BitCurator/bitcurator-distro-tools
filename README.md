@@ -13,7 +13,7 @@ Disk image analysis tools developed for the BitCurator environment.
 
 The included setup.py script will install the BitCurator tools in the appropriate locations. Note! If you're using this script outside of the full BitCurator environment, there are many dependencies that may not be met automatically. 
 
-The full dependency stack can currently be built automatically in Ubuntu 18.04LTS using the SaltStack build repo at https://github.com/bitcurator/bitcurator-distro-salt. Past release (no longer actively maintained) used the now-deprecated https://github.com/bitcurator/bitcurator-distro-bootstrap.
+The full dependency stack can currently be built automatically in Ubuntu 18.04LTS using the SaltStack build repo at https://github.com/bitcurator/bitcurator-distro-salt. 
 
 To install:
 
