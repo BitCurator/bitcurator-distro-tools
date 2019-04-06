@@ -4,6 +4,8 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/issues)
 [![GitHub forks](https://img.shields.io/github/forks/bitcurator/bitcurator-distro-tools.svg)](https://github.com/bitcurator/bitcurator-distro-tools/network)
+[![Build Status](https://travis-ci.org/BitCurator/bitcurator-distro-tools.svg?branch=master)](https://travis-ci.org/BitCurator/bitcurator-distro-tools)
+[![Twitter Follow](https://img.shields.io/twitter/follow/bitcurator.svg?style=social&label=Follow)](https://twitter.com/bitcurator)
 
 Disk image analysis tools developed for the BitCurator environment.
 
